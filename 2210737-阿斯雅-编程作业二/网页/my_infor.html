@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页 - 阿斯雅的个人简介</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: #f9f9f9;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(45deg, #81d4fa, #4fc3f7);
+            color: #fff;
+            border-radius: 25px;
+            box-shadow: 0 8px 30px rgba(79, 195, 247, 0.5);
+            animation: headerGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes headerGlow {
+            from {
+                box-shadow: 0 8px 30px rgba(79, 195, 247, 0.5);
+            }
+
+            to {
+                box-shadow: 0 12px 40px rgba(79, 195, 247, 0.7);
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            transition: transform 0.5s;
+        }
+
+            .content:hover {
+                transform: rotateY(5deg);
+            }
+
+        h2 {
+            color: #4fc3f7;
+            margin-top: 30px;
+            text-decoration: underline;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+            outline: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1em;
+            color: #b3b3b3;
+        }
+
+        .card {
+            background: #f1f1f1;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            transition: transform 0.3s;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+            .social-links a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #4fc3f7;
+                font-size: 28px;
+                transition: color 0.3s, transform 0.3s;
+            }
+
+                .social-links a:hover {
+                    color: #0091ea;
+                    transform: scale(1.2);
+                }
+
+        /* New styles for creativity */
+        .quote {
+            font-style: italic;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+
+            .quote:hover {
+                transform: scale(1.05);
+            }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background: #4fc3f7;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+            .skill:hover {
+                transform: scale(1.1);
+            }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>个人简介</h1>
+        <img src="logo.png" alt="我的独特 LOGO">
+    </header>
+
+    <div class="content">
+        <h2>个人信息</h2>
+        <div class="card">
+            <p><strong><span style="color: #333;">专业领域：</strong><span style="color: #333;">信息安全</p>
+            <p><strong><span style="color: #333;">学号：</strong><span style="color: #333;">2210737</p>
+            <p><strong><span style="color: #333;">姓名：</strong><span style="color: #333;">阿斯雅</p>
+        </div>
+
+        <h2>自我介绍</h2>
+          
+         <a href="introduce.mp3">点击播放</a>
+        <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+
+
+        <div class="quote">
+            “学无止境，未来可期！”
+        </div>
+
+        
+
+        
+    </div>
+
+    <footer>
+        <p>© 2024 阿斯雅. 版权所有.</p>
+    </footer>
+
+</body>
+
+</html>
